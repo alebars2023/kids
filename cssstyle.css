@@ -1,0 +1,119 @@
+/* Полностью перенесён из предыдущего HTML */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fffdf5;
+  color: #333;
+}
+header {
+  background: linear-gradient(to right, #ffb7c5, #ffedd5);
+  padding: 40px 20px;
+  text-align: center;
+}
+header h1 {
+  font-size: 2.8em;
+  margin: 0;
+  color: #d94f8a;
+}
+header p {
+  font-size: 1.3em;
+  margin-top: 10px;
+  color: #555;
+}
+.programs {
+  max-width: 1000px;
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 0 20px;
+}
+.program {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+.program:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+.program h2 {
+  color: #ff6b81;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.program ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  display: none;
+}
+.program.active ul {
+  display: block;
+}
+.program li::before {
+  content: "✨ ";
+  color: #ff6b81;
+}
+.call-to-action {
+  text-align: center;
+  margin: 40px 20px;
+  padding: 20px;
+  background-color: #ffe0ec;
+  border-radius: 12px;
+}
+.call-to-action h2 {
+  font-size: 1.8em;
+  color: #e05574;
+  margin-bottom: 15px;
+}
+.call-to-action p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  color: #444;
+}
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 1em;
+  background-color: #ff6b81;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.btn:hover {
+  background-color: #e05574;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #aaa;
+  background-color: #fffdf5;
+}
+.page-content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
+}
+.page-content ul {
+  text-align: left;
+  margin: 20px auto;
+  padding-left: 20px;
+}
